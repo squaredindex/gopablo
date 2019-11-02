@@ -1,6 +1,6 @@
 # [![GoPablo](https://raw.githubusercontent.com/luangjokaj/gopablo/master/src/assets/img/logo.svg?sanitize=true)](https://www.gopablo.co/)
 
-# [![Tailwind](https://cdn.svgporn.com/logos/tailwindcss.svg | width=70)](https://tailwindcss.com/)
+# [![Tailwind](https://cdn.svgporn.com/logos/tailwindcss.svg| width=70)](https://tailwindcss.com/)
 
 ![Version](https://img.shields.io/github/package-json/v/luangjokaj/gopablo) [![Dependencies](https://david-dm.org/luangjokaj/gopablo/status.svg)](https://david-dm.org/luangjokaj/gopablo)
 
