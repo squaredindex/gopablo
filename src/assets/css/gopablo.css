@@ -1,7 +1,15 @@
 body {
-	text-align: center;
+    text-align: center;
+    background: #f7fafc;
 }
 
 .header {
-	padding-top: 20px;
+    padding: 1rem 0;
+    & img {
+        filter: invert(1);
+    }
+}
+
+.pogo-pattern {
+    background-image: url('../img/pogo_pattern.svg');
 }

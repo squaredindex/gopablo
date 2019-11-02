@@ -1,11 +1,10 @@
-/*********************************************************************
-**********************************************************************
-Cherry - Design System
-Entry Points
-**********************************************************************
-*********************************************************************/
 
-@import '../../../node_modules/cherry-grid/dist/css/styles.css';
 @import './globals.css';
 
-@import './gopablo.css',
+@import './gopablo.css';
+
+/* Tailwind CSS */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
