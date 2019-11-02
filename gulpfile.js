@@ -20,13 +20,14 @@ const postcss = require('gulp-postcss');
 const postcssImport = require('postcss-import');
 const postCSSMixins = require('postcss-mixins');
 const tailwind = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 const postcssPresetEnv = require('postcss-preset-env');
 const RevAll = require('gulp-rev-all');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const purgecss = require('gulp-purgecss');
 
-//--------------------------------------------------------------------------------------------------
+
 /* -------------------------------------------------------------------------------------------------
 PostCSS Plugins
 -------------------------------------------------------------------------------------------------- */
@@ -47,6 +48,7 @@ const pluginsProd = [
     postcssImport,
     postCSSMixins,
     tailwind,
+    autoprefixer,
     postcssPresetEnv({
         stage: 0,
         features: {
@@ -65,7 +67,7 @@ const pluginsProd = [
     }),
 ];
 
-//--------------------------------------------------------------------------------------------------
+
 /* -------------------------------------------------------------------------------------------------
 Header & Footer JavaScript Boundles
 -------------------------------------------------------------------------------------------------- */
@@ -78,7 +80,7 @@ const footerJS = [
     './src/assets/js/**',
 ];
 
-//--------------------------------------------------------------------------------------------------
+
 /* -------------------------------------------------------------------------------------------------
 Development Tasks
 -------------------------------------------------------------------------------------------------- */
