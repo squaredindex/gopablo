@@ -1,7 +1,8 @@
 /* -------------------------------------------------------------------------------------------------
 
-GoPablo - Static site generator
-Contributors: Luan Gjokaj, Sherif Saleh
+SweetStatic - Static site generator
+Orginally based on the GoPablo static site generator
+Contributors: Luan Gjokaj, Sherif Saleh, Michael Levett
 
 -------------------------------------------------------------------------------------------------- */
 const { gulp, series, parallel, dest, src, watch } = require('gulp');
@@ -86,7 +87,7 @@ Development Tasks
 -------------------------------------------------------------------------------------------------- */
 function devServer() {
     browserSync.init({
-        logPrefix: '🐺 GoPablo',
+        logPrefix: '🍬 SweetStatic',
         server: {
             baseDir: './build',
         },
@@ -296,7 +297,7 @@ Messages
 const errorMsg = '\x1b[41mError\x1b[0m';
 const filesGenerated = 'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
 
-const staticBuild = '\x1b[42m\x1b[1m🐺 GoPablo\x1b[0m';
+const staticBuild = '\x1b[42m\x1b[1m🍬 SweetStatic\x1b[0m';
 const staticBuildUrl = '\x1b[2m - https://www.gopablo.co/\x1b[0m';
 const thankYou = 'Thank you for using ' + staticBuild + staticBuildUrl;
 
