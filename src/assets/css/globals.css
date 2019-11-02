@@ -1,1 +1,5 @@
-@import "./variables.css";
+/* purgecss start ignore */
+::selection {
+    background: #667EEA;
+}
+/* purgecss end ignore */
