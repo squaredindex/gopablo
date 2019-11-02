@@ -115,7 +115,7 @@ function copyFontsDev() {
 }
 
 function stylesDev() {
-    return src('./src/assets/css/styles.css')
+    return src(['./src/assets/css/styles.css', './src/assets/css/aos.css'])
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sourcemaps.init())
         .pipe(postcss(pluginsDev))
@@ -239,7 +239,7 @@ function processImages() {
 }
 
 function stylesProd() {
-    return src('./src/assets/css/styles.css')
+    return src(['./src/assets/css/styles.css', './src/assets/css/aos.css'])
         .pipe(plumber({ errorHandler: onError }))
         .pipe(postcss(pluginsProd))
         .pipe(purgecss({
