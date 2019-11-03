@@ -77,7 +77,6 @@ const headerJS = [
 ];
 const footerJS = [
     // './node_modules/webfontloader/webfontloader.js',
-    // './node_modules/jquery/dist/jquery.js',
     './src/assets/js/**',
 ];
 
@@ -168,7 +167,7 @@ exports.dev = series(
     headerScriptsDev,
     footerScriptsDev,
     staticFilesDev,
-    devServer,
+    devServer
 );
 
 /* -------------------------------------------------------------------------------------------------
